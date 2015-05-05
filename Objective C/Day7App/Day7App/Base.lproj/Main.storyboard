@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jCw-Ao-0hZ">
+                                <rect key="frame" x="16" y="28" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uFQ-qt-hms">
+                                <rect key="frame" x="16" y="104" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R0D-OJ-RNr">
+                                <rect key="frame" x="16" y="66" width="88" height="30"/>
+                                <state key="normal" title="Fetch Data 1">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedFetchData1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xna-ft-EeN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czB-Xs-AvF">
+                                <rect key="frame" x="496" y="66" width="88" height="30"/>
+                                <state key="normal" title="Fetch Data 2">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedFetchData2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TPY-9S-Isx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jCw-Ao-0hZ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="0wX-R0-NBg"/>
+                            <constraint firstItem="R0D-OJ-RNr" firstAttribute="leading" secondItem="uFQ-qt-hms" secondAttribute="leading" id="QHw-fZ-JXa"/>
+                            <constraint firstItem="jCw-Ao-0hZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="RBn-uk-oO6"/>
+                            <constraint firstItem="czB-Xs-AvF" firstAttribute="baseline" secondItem="R0D-OJ-RNr" secondAttribute="baseline" id="VWg-2s-S5k"/>
+                            <constraint firstItem="uFQ-qt-hms" firstAttribute="top" secondItem="R0D-OJ-RNr" secondAttribute="bottom" constant="8" symbolic="YES" id="Xhr-dL-5jy"/>
+                            <constraint firstItem="R0D-OJ-RNr" firstAttribute="top" secondItem="jCw-Ao-0hZ" secondAttribute="bottom" constant="8" symbolic="YES" id="dJp-Vn-pJ6"/>
+                            <constraint firstItem="R0D-OJ-RNr" firstAttribute="leading" secondItem="jCw-Ao-0hZ" secondAttribute="leading" id="hoo-kb-Ujx"/>
+                            <constraint firstItem="R0D-OJ-RNr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="qHY-V5-Tzb"/>
+                            <constraint firstItem="jCw-Ao-0hZ" firstAttribute="trailing" secondItem="czB-Xs-AvF" secondAttribute="trailing" id="qZT-iV-PVN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblData" destination="uFQ-qt-hms" id="Jok-Te-HmV"/>
+                        <outlet property="txtName" destination="jCw-Ao-0hZ" id="80h-s7-ZMU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="414" y="107"/>
+        </scene>
+    </scenes>
+</document>
