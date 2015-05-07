@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jG9-Zf-dgI">
+                                <rect key="frame" x="281" y="28" width="38" height="30"/>
+                                <state key="normal" title="Email">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedEmail:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tq0-76-kwQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u0E-kP-4qP">
+                                <rect key="frame" x="284" y="66" width="33" height="30"/>
+                                <state key="normal" title="SMS">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedSMS:" destination="BYZ-38-t0r" eventType="touchUpInside" id="256-IH-0ul"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBn-hZ-PRv">
+                                <rect key="frame" x="280" y="104" width="40" height="30"/>
+                                <state key="normal" title="Safari">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedSafari:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KhY-Cv-Loq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBA-gS-4aK">
+                                <rect key="frame" x="285" y="142" width="30" height="30"/>
+                                <state key="normal" title="Call">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedCall:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DZX-NU-w4y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RNf-Ju-CZ7">
+                                <rect key="frame" x="277" y="180" width="46" height="30"/>
+                                <state key="normal" title="Twitter">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedTwitter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vRx-IO-2Hz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6U-gx-FID">
+                                <rect key="frame" x="266" y="218" width="68" height="30"/>
+                                <state key="normal" title="Facebook">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedFacebook:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oik-8s-Ieq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dBA-gS-4aK" firstAttribute="centerX" secondItem="RNf-Ju-CZ7" secondAttribute="centerX" id="9cO-NB-iBs"/>
+                            <constraint firstItem="dBA-gS-4aK" firstAttribute="centerX" secondItem="cBn-hZ-PRv" secondAttribute="centerX" id="EZn-cp-CLW"/>
+                            <constraint firstItem="dBA-gS-4aK" firstAttribute="top" secondItem="cBn-hZ-PRv" secondAttribute="bottom" constant="8" symbolic="YES" id="MZx-jp-4jg"/>
+                            <constraint firstItem="u0E-kP-4qP" firstAttribute="top" secondItem="jG9-Zf-dgI" secondAttribute="bottom" constant="8" symbolic="YES" id="POj-Tg-7HB"/>
+                            <constraint firstItem="cBn-hZ-PRv" firstAttribute="top" secondItem="u0E-kP-4qP" secondAttribute="bottom" constant="8" symbolic="YES" id="UYX-SW-I0Y"/>
+                            <constraint firstItem="RNf-Ju-CZ7" firstAttribute="top" secondItem="dBA-gS-4aK" secondAttribute="bottom" constant="8" symbolic="YES" id="XTE-up-IxC"/>
+                            <constraint firstItem="jG9-Zf-dgI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="Zhi-xu-W7a"/>
+                            <constraint firstItem="RNf-Ju-CZ7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ggj-9F-gU2"/>
+                            <constraint firstItem="RNf-Ju-CZ7" firstAttribute="centerX" secondItem="f6U-gx-FID" secondAttribute="centerX" id="hCC-4m-9hC"/>
+                            <constraint firstItem="f6U-gx-FID" firstAttribute="top" secondItem="RNf-Ju-CZ7" secondAttribute="bottom" constant="8" symbolic="YES" id="um2-iN-Drt"/>
+                            <constraint firstItem="jG9-Zf-dgI" firstAttribute="centerX" secondItem="u0E-kP-4qP" secondAttribute="centerX" id="uus-0q-qVE"/>
+                            <constraint firstItem="u0E-kP-4qP" firstAttribute="centerX" secondItem="cBn-hZ-PRv" secondAttribute="centerX" id="zmc-3J-cVl"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
