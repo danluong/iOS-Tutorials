@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bgz-ud-A2k">
+                                <rect key="frame" x="271" y="28" width="59" height="30"/>
+                                <state key="normal" title="Button 1">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedButtonOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jh4-OH-gZq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JC8-Wg-hhc">
+                                <rect key="frame" x="271" y="104" width="59" height="30"/>
+                                <state key="normal" title="Button 3">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedButtonThree:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wpJ-hy-TfK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AqU-FJ-siP">
+                                <rect key="frame" x="271" y="142" width="59" height="30"/>
+                                <state key="normal" title="Button 4">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedButtonFour:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zr0-wh-IGJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tES-Fh-cb8">
+                                <rect key="frame" x="271" y="66" width="59" height="30"/>
+                                <state key="normal" title="Button 2">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedButtonTwo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Gz-GO-uAe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tES-Fh-cb8" firstAttribute="top" secondItem="bgz-ud-A2k" secondAttribute="bottom" constant="8" symbolic="YES" id="Bey-YU-ssr"/>
+                            <constraint firstItem="AqU-FJ-siP" firstAttribute="top" secondItem="JC8-Wg-hhc" secondAttribute="bottom" constant="8" symbolic="YES" id="KYb-ZY-tR0"/>
+                            <constraint firstItem="tES-Fh-cb8" firstAttribute="leading" secondItem="bgz-ud-A2k" secondAttribute="leading" id="bsg-DP-CPP"/>
+                            <constraint firstItem="JC8-Wg-hhc" firstAttribute="leading" secondItem="AqU-FJ-siP" secondAttribute="leading" id="eBj-P6-YD3"/>
+                            <constraint firstItem="bgz-ud-A2k" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fwk-tT-2MG"/>
+                            <constraint firstItem="bgz-ud-A2k" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="l2i-QO-b8V"/>
+                            <constraint firstItem="tES-Fh-cb8" firstAttribute="leading" secondItem="JC8-Wg-hhc" secondAttribute="leading" id="qsu-ZP-EUh"/>
+                            <constraint firstItem="JC8-Wg-hhc" firstAttribute="top" secondItem="tES-Fh-cb8" secondAttribute="bottom" constant="8" symbolic="YES" id="uue-1I-cvp"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
