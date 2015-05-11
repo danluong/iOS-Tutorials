@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="pk8-0R-sRP">
+                                <rect key="frame" x="0.0" y="95" width="600" height="505"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="nrP-2Z-Rta"/>
+                                </connections>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="va6-iO-L4U">
+                                <rect key="frame" x="16" y="28" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VTx-su-DMI">
+                                <rect key="frame" x="16" y="61" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UhC-OK-rwq">
+                                <rect key="frame" x="527" y="57" width="57" height="30"/>
+                                <state key="normal" title="Remove">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedRemove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cVe-2f-pRR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcS-wc-rBg">
+                                <rect key="frame" x="554" y="28" width="30" height="30"/>
+                                <state key="normal" title="Add">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qbD-gP-6HH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="va6-iO-L4U" firstAttribute="top" secondItem="gcS-wc-rBg" secondAttribute="top" id="3eD-Re-Psi"/>
+                            <constraint firstItem="UhC-OK-rwq" firstAttribute="trailing" secondItem="gcS-wc-rBg" secondAttribute="trailing" id="8AE-KR-Yc8"/>
+                            <constraint firstItem="pk8-0R-sRP" firstAttribute="top" secondItem="UhC-OK-rwq" secondAttribute="bottom" constant="8" symbolic="YES" id="8Ub-tO-8ya"/>
+                            <constraint firstItem="pk8-0R-sRP" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="Dvx-6b-Wvs"/>
+                            <constraint firstItem="VTx-su-DMI" firstAttribute="top" secondItem="va6-iO-L4U" secondAttribute="bottom" constant="12" id="M1v-UJ-7Vh"/>
+                            <constraint firstItem="va6-iO-L4U" firstAttribute="leading" secondItem="VTx-su-DMI" secondAttribute="leading" id="OP7-ph-2dp"/>
+                            <constraint firstAttribute="trailing" secondItem="pk8-0R-sRP" secondAttribute="trailing" id="VV5-3R-Zso"/>
+                            <constraint firstItem="pk8-0R-sRP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ZWM-iR-yNT"/>
+                            <constraint firstItem="VTx-su-DMI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="aba-9f-iQh"/>
+                            <constraint firstItem="UhC-OK-rwq" firstAttribute="baseline" secondItem="VTx-su-DMI" secondAttribute="baseline" id="f6Z-jB-UTB"/>
+                            <constraint firstItem="gcS-wc-rBg" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="ie5-Ti-g31"/>
+                            <constraint firstItem="va6-iO-L4U" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="sRL-1f-C8I"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblLatitude" destination="VTx-su-DMI" id="XB4-Gm-cm4"/>
+                        <outlet property="lblLongitude" destination="va6-iO-L4U" id="Ah6-c0-sgq"/>
+                        <outlet property="mapView" destination="pk8-0R-sRP" id="7Id-6m-IF5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
